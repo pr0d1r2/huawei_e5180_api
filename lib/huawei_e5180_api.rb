@@ -11,10 +11,10 @@ class HuaweiE5180Api < Mechanize
   def initialize(address = DEFAULT_ADDRESS)
     @address = address
     super
-    cookie!
   end
 
   def method_missing(m, *_args, &_block)
+    cookie!
     Hash.from_xml(get(send("#{m}_url")).body)['response']
   end
 
