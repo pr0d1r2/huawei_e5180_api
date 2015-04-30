@@ -6,6 +6,30 @@ Api support for Huawei E5180 LTE modem in ruby.
 
 As mobile companies give shitty data cap of 100GB on "unlimited" plans (after which you land with 2M/384k connection) we want to know internet usage distribution.
 
+## Setup
+
+Install gem:
+```gem install huawei_e5180_api```
+
+Put this into your Gemfile:
+```gem 'huawei_e5180_api'```
+
+
+## Usage:
+
+```
+require 'huawei_e5180_api'
+
+agent = HuaweiE5180Api.new
+while true
+  stats = agent.traffic_statistics
+  # here save stats to database for further analysis
+  sleep 5
+end
+```
+
+Also see specs.
+
 ## Contributing to huawei_e5180_api
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
