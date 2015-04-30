@@ -3,6 +3,17 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe HuaweiE5180Api do
   let(:agent) { described_class.new }
 
+  describe '#address' do
+    it { expect(agent.address).to eq('192.168.8.1') }
+
+    context 'when change address' do
+      let(:changed_address) { '10.0.0.1' }
+      let(:agent) { described_class.new(changed_address) }
+
+      it { expect(agent.address).to eq(changed_address) }
+    end
+  end
+
   describe '#status' do
     it 'returns hash with stats' do
       VCR.use_cassette('status') do
