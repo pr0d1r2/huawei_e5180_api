@@ -1,6 +1,6 @@
 # huawei_e5180_api
 
-Api support for Huawei E5180 LTE modem.
+Api support for Huawei E5180 LTE modem in ruby.
 
 ## Why?
 

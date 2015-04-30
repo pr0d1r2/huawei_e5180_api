@@ -15,11 +15,11 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification...
   # see http://guides.rubygems.org/specification-reference/ for more options
-  gem.name = 'huawei_e5180_monitoring'
-  gem.homepage = 'http://github.com/pr0d1r2/huawei_e5180_monitoring'
+  gem.name = 'huawei_e5180_api'
+  gem.homepage = 'http://github.com/pr0d1r2/huawei_e5180_api'
   gem.license = 'MIT'
-  gem.summary = %(TODO: one-line summary of your gem)
-  gem.description = %(TODO: longer description of your gem)
+  gem.summary = %(Api support for Huawei E5180 LTE modem in ruby.)
+  gem.description = %(Api support for Huawei E5180 LTE modem in ruby.)
   gem.email = 'pr0d1r2@gmail.com'
   gem.authors = ['Marcin Nowicki']
   # dependencies defined in Gemfile
