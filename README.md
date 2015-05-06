@@ -1,6 +1,4 @@
-![travis-status](https://travis-ci.org/pr0d1r2/huawei_e5180_api.svg)
-
-# huawei_e5180_api
+# huawei_e5180_api [![Build Status](https://travis-ci.org/pr0d1r2/huawei_e5180_api.svg?branch=master)](https://travis-ci.org/pr0d1r2/huawei_e5180_api)
 
 Api support for Huawei E5180 LTE modem in ruby.
 
