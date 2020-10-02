@@ -15,9 +15,9 @@ class HuaweiE5180Api < Mechanize
     super
   end
 
-  def method_missing(m, *_args, &_block)
+  def method_missing(name, *_args, &_block)
     cookie!
-    Hash.from_xml(get(send("#{m}_url")).body)['response']
+    Hash.from_xml(get(send("#{name}_url")).body)['response']
   end
 
   private
