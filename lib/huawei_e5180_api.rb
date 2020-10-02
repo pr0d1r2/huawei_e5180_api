@@ -20,6 +20,10 @@ class HuaweiE5180Api < Mechanize
     Hash.from_xml(get(send("#{name}_url")).body)['response']
   end
 
+  def respond_to_missing?(name, _)
+    respond_to?("#{name}_url")
+  end
+
   private
 
   def monitoring_url(endpoint)
