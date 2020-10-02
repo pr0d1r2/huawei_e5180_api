@@ -42,4 +42,4 @@ Also see specs.
 
 ## License
 
-MIT. Copyright (c) 2015 Marcin Nowicki. See LICENSE for further details.
+MIT. Copyright (c) 2015-2020 Marcin Nowicki. See LICENSE for further details.
