@@ -15,14 +15,12 @@ class HuaweiE5180Api < Mechanize
     super
   end
 
-  # rubocop:todo Style/MethodMissingSuper
   # rubocop:todo Style/MissingRespondToMissing
   def method_missing(name, *_args, &_block)
     cookie!
     Hash.from_xml(get(send("#{name}_url")).body)['response']
   end
   # rubocop:enable Style/MissingRespondToMissing
-  # rubocop:enable Style/MethodMissingSuper
 
   private
 
