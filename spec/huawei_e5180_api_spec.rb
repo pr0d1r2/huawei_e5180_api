@@ -2,7 +2,7 @@
 
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe HuaweiE5180Api do
+describe HuaweiE5180Api do # rubocop:todo Metrics/BlockLength
   let(:agent) { described_class.new }
 
   describe '#address' do
@@ -16,9 +16,9 @@ describe HuaweiE5180Api do
     end
   end
 
-  describe '#status' do
-    it 'returns hash with stats' do
-      VCR.use_cassette('status') do
+  describe '#status' do # rubocop:todo Metrics/BlockLength
+    it 'returns hash with stats' do # rubocop:todo Metrics/BlockLength
+      VCR.use_cassette('status') do # rubocop:todo Metrics/BlockLength
         expect(
           agent.status
         ).to eq('BatteryLevel' => nil,
