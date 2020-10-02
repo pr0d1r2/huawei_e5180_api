@@ -59,6 +59,6 @@ class HuaweiE5180Api < Mechanize
   end
 
   def cookie!
-    @cookie_request ||= get(home_url)
+    @cookie ||= get(home_url)
   end
 end
