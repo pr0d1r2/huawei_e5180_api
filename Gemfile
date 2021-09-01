@@ -13,7 +13,7 @@ group :development do
   gem 'guard-rubocop'
   gem 'guard-rubycritic'
   gem 'jeweler'
-  gem 'rdoc', '~> 3.12'
+  gem 'rdoc', '~> 6.3'
   gem 'rspec'
   gem 'simplecov', '>= 0'
   gem 'vcr'
