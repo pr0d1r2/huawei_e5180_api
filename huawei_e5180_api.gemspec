@@ -61,7 +61,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency('guard-rubocop', ['>= 0'])
       s.add_development_dependency('guard-rubycritic', ['>= 0'])
       s.add_development_dependency('jeweler', ['~> 2.0.1'])
-      s.add_development_dependency('rdoc', ['~> 3.12'])
+      s.add_development_dependency('rdoc', '~> 6.3')
       s.add_development_dependency('rspec', ['>= 0'])
       s.add_development_dependency('simplecov', ['>= 0'])
       s.add_development_dependency('vcr', ['>= 0'])
@@ -85,7 +85,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency('mechanize', ['>= 0'])
     s.add_dependency('mechanize', ['>= 0'])
-    s.add_dependency('rdoc', ['~> 3.12'])
+    s.add_dependency('rdoc', '~> 6.3')
     s.add_dependency('rspec', ['>= 0'])
     s.add_dependency('simplecov', ['>= 0'])
     s.add_dependency('vcr', ['>= 0'])

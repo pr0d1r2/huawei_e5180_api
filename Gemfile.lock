@@ -104,7 +104,6 @@ GEM
       rake
       rdoc
       semver2
-    json (1.8.6)
     jwt (2.2.2)
     kwalify (0.7.2)
     launchy (2.4.3)
@@ -160,8 +159,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rchardet (1.8.0)
-    rdoc (3.12.2)
-      json (~> 1.4)
+    rdoc (6.3.1)
     reek (6.0.1)
       kwalify (~> 0.7.0)
       parser (>= 2.5.0.0, < 2.8, != 2.5.1.1)
@@ -249,7 +247,7 @@ DEPENDENCIES
   guard-rubycritic
   jeweler
   mechanize
-  rdoc (~> 3.12)
+  rdoc (~> 6.3)
   rspec
   simplecov
   vcr
